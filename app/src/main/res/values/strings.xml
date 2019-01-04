@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ARCoreTest</string>
+    <string name="please_open_gps">Please open gps</string>
+    <string name="confirm">Confirm</string>
+</resources>

@@ -1,0 +1,98 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.google.ar.sceneform.plugin'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "sg.fooyo.arcoretest"
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.google.ar:core:1.6.0'
+    implementation "com.google.ar.sceneform:core:1.6.0"
+    implementation "com.google.ar.sceneform.ux:sceneform-ux:1.6.0"
+    implementation "org.jetbrains.anko:anko:$anko_version"
+    implementation 'com.github.tbruyelle:rxpermissions:0.10.2'
+    def lifecycle_version = "1.1.1"
+
+    // ViewModel and LiveData
+    implementation "android.arch.lifecycle:extensions:$lifecycle_version"
+    annotationProcessor "android.arch.lifecycle:compiler:$lifecycle_version"
+//    def room_version = "1.1.1"
+//
+//    implementation "android.arch.persistence.room:runtime:$room_version"
+//    annotationProcessor "android.arch.persistence.room:compiler:$room_version" // use kapt for Kotlin
+//
+//    def paging_version = "1.0.0"
+//
+//    implementation "android.arch.paging:runtime:$paging_version"
+//
+//    def work_version = "1.0.0-beta01"
+//
+//    implementation "android.arch.work:work-runtime:$work_version" // use -ktx for Kotlin+Coroutines
+}
+
+
+sceneform.asset('sampledata/pikachu/pikachu.obj',
+        'default',
+        'sampledata/pikachu/pikachu.sfa',
+        'src/main/assets/pikachu')
+
+sceneform.asset('sampledata/ninja/deidara.obj',
+        'default',
+        'sampledata/ninja/deidara.sfa',
+        'src/main/assets/deidara')
+
+
+sceneform.asset('sampledata/models/andy.obj',
+        'default',
+        'sampledata/models/andy.sfa',
+        'src/main/assets/andy')
+
+sceneform.asset('sampledata/signboard/10558_OverheadFreewaySignage_v3-L2.obj',
+        'default',
+        'sampledata/signboard/10558_OverheadFreewaySignage_v3-L2.sfa',
+        'src/main/assets/10558_OverheadFreewaySignage_v3-L2')
+
+sceneform.asset('sampledata/sign/sign.obj',
+        'default',
+        'sampledata/sign/sign.sfa',
+        'src/main/assets/sign')
+
+sceneform.asset('sampledata/brand/uk.obj',
+        'default',
+        'sampledata/brand/uk.sfa',
+        'src/main/assets/uk')
+
+sceneform.asset('sampledata/stick/stick.obj',
+        'default',
+        'sampledata/stick/stick.sfa',
+        'src/main/assets/stick')

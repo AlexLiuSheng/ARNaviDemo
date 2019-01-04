@@ -1,0 +1,122 @@
+{
+  materials: [
+    {
+      name: 'Material__30',
+      parameters: [
+        {
+          baseColor: 'ntxr000',
+        },
+        {
+          baseColorTint: [
+            0.58799999999999997,
+            0.58799999999999997,
+            0.58799999999999997,
+            1,
+          ],
+        },
+        {
+          metallic: 1,
+        },
+        {
+          roughness: 0.408248,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+    {
+      name: 'Material__27',
+      parameters: [
+        {
+          baseColor: 'ntxr004',
+        },
+        {
+          baseColorTint: [
+            0.58799999999999997,
+            0.58799999999999997,
+            0.58799999999999997,
+            1,
+          ],
+        },
+        {
+          metallic: 1,
+        },
+        {
+          roughness: 0.408248,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+    {
+      name: 'Material__29',
+      parameters: [
+        {
+          baseColor: 'ntxr005',
+        },
+        {
+          baseColorTint: [
+            0.58799999999999997,
+            0.58799999999999997,
+            0.58799999999999997,
+            1,
+          ],
+        },
+        {
+          metallic: 1,
+        },
+        {
+          roughness: 0.408248,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/ninja/deidara.obj',
+    name: 'deidara',
+    recenter: 'root',
+    
+    scale: 0.0021749999999999999,
+  },
+  samplers: [
+    {
+      file: 'sampledata/ninja/ntxr005.png',
+      name: 'ntxr005',
+      params: {
+        usage_type: 'Data',
+      },
+      pipeline_name: 'ntxr005.png',
+    },
+    {
+      file: 'sampledata/ninja/ntxr004.png',
+      name: 'ntxr004',
+      params: {
+        usage_type: 'Data',
+      },
+      pipeline_name: 'ntxr004.png',
+    },
+    {
+      file: 'sampledata/ninja/ntxr000.png',
+      name: 'ntxr000',
+      params: {
+        usage_type: 'Data',
+      },
+      pipeline_name: 'ntxr000.png',
+    },
+  ],
+  version: '0.54:1',
+}
